@@ -1,3 +1,12 @@
+"""
+Sentiment Hub - aggregated sentiment scoring service.
+
+Installation requirements:
+    pip install fastapi uvicorn[standard] requests feedparser python-dotenv sqlalchemy transformers torch praw
+
+Run with: python sentiment_hub.py
+"""
+
 import os, re, time, math, json, asyncio, logging, hashlib
 from datetime import datetime, timezone
 from typing import List, Dict, Any, Optional
